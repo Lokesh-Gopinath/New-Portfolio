@@ -59,7 +59,7 @@ const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
 
         {/* Terminal Text */}
         <div className="mt-4 text-xs h-6 text-primary animate-pulse">
-            > {texts[Math.min(textIndex, Math.floor(progress / 25))]}<span className="animate-blink">_</span>
+            &gt; {texts[Math.min(textIndex, Math.floor(progress / 25))]}<span className="animate-blink">_</span>
         </div>
 
         {/* Decorative Grid */}
