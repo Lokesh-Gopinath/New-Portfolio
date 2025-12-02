@@ -112,7 +112,7 @@ function App() {
 
             <div className="flex-1 text-lg leading-relaxed text-gray-300">
               <p className="mb-6 font-light">
-                <span className="text-secondary font-mono text-xl mr-2">></span>
+                <span className="text-secondary font-mono text-xl mr-2">&gt;</span>
                 I am an <span className="text-white font-bold border-b border-primary">Electronics & Communication Engineering</span> graduate.
               </p>
               <p>
@@ -222,8 +222,8 @@ function App() {
                     More Projects
                 </h3>
                 <p className="text-gray-400 text-sm max-w-xs mx-auto mb-6 relative z-10 font-mono text-[11px] leading-relaxed">
-                    > ACCESS_LEVEL: PUBLIC<br/>
-                    > EXPLORE_REPOSITORIES...
+                    &gt; ACCESS_LEVEL: PUBLIC<br/>
+                    &gt; EXPLORE_REPOSITORIES...
                 </p>
 
                 <div className="inline-flex items-center gap-2 text-xs font-bold text-primary border border-primary/50 px-6 py-2 uppercase tracking-widest bg-primary/10 group-hover:bg-primary group-hover:text-white transition-all relative z-10">
