@@ -93,8 +93,6 @@ const Hero: React.FC = () => {
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#f8f9fa]/40 via-transparent to-transparent" />
             </div>
-            {/* Decorative dot */}
-            <div className="absolute -top-3 -right-3 w-6 h-6 rounded-full bg-gradient-to-br from-[#74b9ff] to-[#a29bfe] shadow-[2px_2px_6px_rgba(116,185,255,0.4)]" />
           </div>
         </motion.div>
       </div>

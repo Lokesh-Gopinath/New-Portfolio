@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 
 export const SOCIALS = {
-  email: "lokeshgopinathk@proton.me",
+  email: "lokeshgopinath75@gmail.com",
   linkedin: "https://linkedin.com/in/lokesh-gopinath-k",
   github: "https://github.com/Lokesh-Gopinath",
   location: "Salem, Tamil Nadu"
@@ -58,6 +58,6 @@ export const SKILLS: Skill[] = [
   { name: "Rust", icon: <Shield size={20} />, category: "technical", level: 70 },
   { name: "C++", icon: <Terminal size={20} />, category: "technical", level: 85 },
   { name: "MySQL", icon: <Database size={20} />, category: "technical", level: 82 },
-  { name: "MongoDB", icon: <Database size={20} />, category: "technical", level: 80 },
+  { name: "PostgresDB", icon: <Database size={20} />, category: "technical", level: 80 },
   { name: "IoT", icon: <Globe size={20} />, category: "technical", level: 92 },
 ];
