@@ -13,6 +13,14 @@ export const SOCIALS = {
 
 export const EXPERIENCE: Experience[] = [
   {
+    id: "e5",
+    company: "Mr.Goat (Family Startup – Mutton Home Delivery)",
+    role: "Software Infrastructure Developer / Manager",
+    period: "2026 – Present",
+    description: "Developed an E-Commerce website for order management and customer interfacing\nBuilt Gmail and Telegram-based notification systems for real-time updates",
+    type: "work"
+  },
+  {
     id: "e1",
     company: "Panimalar Engineering College",
     role: "B.E Electronics & Communication",

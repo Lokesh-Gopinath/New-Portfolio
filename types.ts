@@ -28,7 +28,7 @@ export interface Experience {
   company: string;
   period: string;
   description: string;
-  type: "education" | "internship";
+  type: "education" | "internship" | "work";
 }
 
 export interface Skill {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { EXPERIENCE } from '../constants';
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase, GraduationCap, Building } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
@@ -39,8 +39,10 @@ const Experience: React.FC = () => {
 
                   {/* Icon Node */}
                   <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 bg-[#f0f0f3] rounded-full flex items-center justify-center z-10 shadow-[4px_4px_8px_#d1d1d1,-4px_-4px_8px_#ffffff]">
-                    {exp.type === 'education' ? (
+                  {exp.type === 'education' ? (
                       <GraduationCap size={18} className="text-[#74b9ff]" />
+                    ) : exp.type === 'work' ? (
+                      <Building size={18} className="text-[#81ecec]" />
                     ) : (
                       <Briefcase size={18} className="text-[#a29bfe]" />
                     )}
@@ -62,9 +64,11 @@ const Experience: React.FC = () => {
                       <h4 className="text-[#74b9ff] font-medium mb-3">
                         {exp.role}
                       </h4>
-                      <p className="text-[#636e72] text-sm leading-relaxed">
-                        {exp.description}
-                      </p>
+                      {exp.description.split('\n').map((line, i) => (
+                        <p key={i} className={`text-[#636e72] text-sm leading-relaxed ${i > 0 ? 'mt-1' : ''}`}>
+                          {line}
+                        </p>
+                      ))}
                     </div>
                   </div>
                 </motion.div>
