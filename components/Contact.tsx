@@ -6,49 +6,64 @@ import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      {/* Footer background element */}
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#74b9ff]/5 to-transparent pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="border border-white/10 bg-surface/50 backdrop-blur-lg p-12 clip-shatter relative"
+          className="bg-[#f0f0f3] rounded-[16px] p-12 shadow-[12px_12px_24px_#d1d1d1,-12px_-12px_24px_#ffffff] relative"
         >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent" />
-          
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-            ESTABLISH <span className="text-primary">UPLINK</span>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#74b9ff] to-[#a29bfe] rounded-full" />
+
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2d3436] mb-6">
+            Get In Touch
           </h2>
-          <p className="text-gray-300 text-lg mb-10 max-w-lg mx-auto">
-            Currently available for freelance projects and full-time opportunities. 
-            Initiate communication sequence below.
+          <p className="text-[#636e72] text-lg mb-10 max-w-lg mx-auto">
+            Currently available for freelance projects and full-time opportunities.
+            Feel free to reach out!
           </p>
 
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
-             <a href={`mailto:${SOCIALS.email}`} className="flex items-center gap-2 px-6 py-3 bg-white text-black font-bold hover:bg-secondary hover:text-white transition-all duration-300 clip-corner">
-                <Mail size={20} /> SEND EMAIL
-             </a>
-             <a href={SOCIALS.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-bold hover:border-white hover:bg-white/10 transition-all duration-300 clip-corner">
-                <Github size={20} /> GITHUB
-             </a>
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <a
+              href={`mailto:${SOCIALS.email}`}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#f0f0f3] rounded-[50px] text-[#2d3436] font-medium shadow-[6px_6px_12px_#d1d1d1,-6px_-6px_12px_#ffffff] hover:shadow-[4px_4px_8px_#d1d1d1,-4px_-4px_8px_#ffffff] hover:scale-[0.98] active:shadow-[inset_4px_4px_8px_#d1d1d1,inset_-4px_-4px_8px_#ffffff] transition-all duration-200"
+            >
+              <Mail size={20} /> Send Email
+            </a>
+            <a
+              href={SOCIALS.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#f0f0f3] rounded-[50px] text-[#2d3436] font-medium shadow-[6px_6px_12px_#d1d1d1,-6px_-6px_12px_#ffffff] hover:shadow-[4px_4px_8px_#d1d1d1,-4px_-4px_8px_#ffffff] hover:scale-[0.98] active:shadow-[inset_4px_4px_8px_#d1d1d1,inset_-4px_-4px_8px_#ffffff] transition-all duration-200"
+            >
+              <Github size={20} /> GitHub
+            </a>
+            <a
+              href={SOCIALS.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#f0f0f3] rounded-[50px] text-[#2d3436] font-medium shadow-[6px_6px_12px_#d1d1d1,-6px_-6px_12px_#ffffff] hover:shadow-[4px_4px_8px_#d1d1d1,-4px_-4px_8px_#ffffff] hover:scale-[0.98] active:shadow-[inset_4px_4px_8px_#d1d1d1,inset_-4px_-4px_8px_#ffffff] transition-all duration-200"
+            >
+              <Linkedin size={20} /> LinkedIn
+            </a>
           </div>
 
-          <div className="flex justify-center gap-8 text-sm text-gray-400 font-mono border-t border-gray-800 pt-8">
-             <div className="flex flex-col items-center gap-2">
-               <Mail size={16} className="text-secondary" />
-               {SOCIALS.email}
-             </div>
-             <div className="flex flex-col items-center gap-2">
-               <MapPin size={16} className="text-secondary" />
-               {SOCIALS.location}
-             </div>
+          <div className="flex justify-center gap-8 text-sm text-[#b2bec3] border-t border-[#e9ecef] pt-8">
+            <div className="flex flex-col items-center gap-2">
+              <Mail size={16} className="text-[#74b9ff]" />
+              {SOCIALS.email}
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <MapPin size={16} className="text-[#74b9ff]" />
+              {SOCIALS.location}
+            </div>
           </div>
         </motion.div>
 
-        <footer className="mt-12 text-gray-500 font-mono text-xs">
-          <p>© 2025 LOKESH GOPINATH K. SYSTEM STATUS: ONLINE</p>
+        <footer className="mt-12 text-[#b2bec3] text-xs">
+          <p>&copy; 2025 Lokesh Gopinath K. All rights reserved.</p>
         </footer>
       </div>
     </section>

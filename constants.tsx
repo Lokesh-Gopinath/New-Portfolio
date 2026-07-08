@@ -1,4 +1,4 @@
-import { Project, Experience, Skill } from './types';
+import { Experience, Skill } from './types';
 import { 
   Code, Cpu, Cloud, Database, Lock, Smartphone, 
   Terminal, Globe, Zap, Server, Shield, Leaf, Radio
@@ -10,49 +10,6 @@ export const SOCIALS = {
   github: "https://github.com/Lokesh-Gopinath",
   location: "Salem, Tamil Nadu"
 };
-
-export const PROJECTS: Project[] = [
-  {
-    id: "p6",
-    title: "Sudoku Solver",
-    description: "A fast and efficient Sudoku solver built in Rust using recursive backtracking. It solves standard 9x9 grids while enforcing all Sudoku rules, showcasing Rust’s strengths in safety and speed.",
-    tech: ["Rust", "Backtracking", "Algorithms"],
-    icon: "grid",
-    link: "https://github.com/Lokesh-Gopinath/Sudoku-Solver"
-  },
-  {
-    id: "p5",
-    title: "Vigenère Cipher Tool",
-    description: "Lightweight web tool for text encryption/decryption using the Vigenère Cipher algorithm.",
-    tech: ["Web", "Cryptography", "Security"],
-    icon: "lock",
-    link: "https://github.com/Lokesh-Gopinath/Vigenere-Cipher"
-  },
-  {
-    id: "p2",
-    title: "WeatherNet",
-    description: "Microcontroller-based weather station integrated with Firebase. Real-time monitoring via custom app/website.",
-    tech: ["Microcontroller", "Firebase", "Android", "Sensors"],
-    icon: "cloud-sun",
-    link: "https://github.com/Lokesh-Gopinath/WeatherNet"
-  },
-  {
-    id: "p4",
-    title: "Simple Convertor",
-    description: "Android application for seamless Binary / Decimal / Octal / Hex conversions built with Kotlin.",
-    tech: ["Kotlin", "Android", "Algorithms"],
-    icon: "smartphone",
-    link: "https://github.com/Lokesh-Gopinath/Simple-Convertor"
-  },
-  {
-    id: "p1",
-    title: "Liquid Pump System",
-    description: "IoT solution using ESP32 & Blynk. Reduced water usage by 20% through smart remote monitoring and control.",
-    tech: ["Node-RED", "ESP32", "IoT", "C++"],
-    icon: "droplet",
-    link: "https://github.com/Lokesh-Gopinath/Liquid-pump-system"
-  }
-];
 
 export const EXPERIENCE: Experience[] = [
   {

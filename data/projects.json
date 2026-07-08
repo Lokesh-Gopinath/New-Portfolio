@@ -1,0 +1,76 @@
+{
+  "projects": [
+    {
+      "id": "p7",
+      "title": "ESP Micro NAS",
+      "description": "A distributed embedded system where an ESP8266 provides a Telnet-based command interface and an ESP32-C3 handles backend processing and persistent storage. The system uses a custom UART protocol to manage notes through a lightweight CLI, optimized for low-resource environments.",
+      "techStack": ["C++", "ESP32", "ESP8266"],
+      "githubUrl": "https://github.com/Lokesh-Gopinath/ESP-Micro-NAS",
+      "liveUrl": "",
+      "image": "",
+      "category": "Embedded",
+      "year": 2026,
+      "featured": true
+    },
+    {
+      "id": "p6",
+      "title": "Sudoku Solver",
+      "description": "A fast and efficient Sudoku solver built in Rust using recursive backtracking. It solves standard 9x9 grids while enforcing all Sudoku rules, showcasing Rust's strengths in safety and speed.",
+      "techStack": ["Rust", "Backtracking", "Algorithms"],
+      "githubUrl": "https://github.com/Lokesh-Gopinath/Sudoku-Solver",
+      "liveUrl": "",
+      "image": "",
+      "category": "Algorithms",
+      "year": 2025,
+      "featured": true
+    },
+    {
+      "id": "p5",
+      "title": "Vigenère Cipher Tool",
+      "description": "Lightweight web tool for text encryption/decryption using the Vigenère Cipher algorithm.",
+      "techStack": ["Web", "Cryptography", "Security"],
+      "githubUrl": "https://github.com/Lokesh-Gopinath/Vigenere-Cipher",
+      "liveUrl": "",
+      "image": "",
+      "category": "Security",
+      "year": 2026,
+      "featured": false
+    },
+    {
+      "id": "p2",
+      "title": "WeatherNet",
+      "description": "Microcontroller-based weather station integrated with Firebase. Real-time monitoring via custom app/website.",
+      "techStack": ["Microcontroller", "Firebase", "Android", "Sensors"],
+      "githubUrl": "https://github.com/Lokesh-Gopinath/WeatherNet",
+      "liveUrl": "",
+      "image": "",
+      "category": "IoT",
+      "year": 2024,
+      "featured": true
+    },
+    {
+      "id": "p4",
+      "title": "Simple Convertor",
+      "description": "Android application for seamless Binary / Decimal / Octal / Hex conversions built with Kotlin.",
+      "techStack": ["Kotlin", "Android", "Algorithms"],
+      "githubUrl": "https://github.com/Lokesh-Gopinath/Simple-Convertor",
+      "liveUrl": "",
+      "image": "",
+      "category": "Mobile",
+      "year": 2024,
+      "featured": false
+    },
+    {
+      "id": "p1",
+      "title": "Liquid Pump System",
+      "description": "IoT solution using ESP32 & Blynk. Reduced water usage by 20% through smart remote monitoring and control.",
+      "techStack": ["Node-RED", "ESP32", "IoT", "C++"],
+      "githubUrl": "https://github.com/Lokesh-Gopinath/Liquid-pump-system",
+      "liveUrl": "",
+      "image": "",
+      "category": "IoT",
+      "year": 2024,
+      "featured": true
+    }
+  ]
+}

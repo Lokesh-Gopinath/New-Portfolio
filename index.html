@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#020617" />
+    <meta name="theme-color" content="#f8f9fa" />
     <meta
       name="description"
       content="Portfolio of Lokesh Gopinath K - Electronics and Communication Engineer"
@@ -16,147 +16,110 @@
         theme: {
           extend: {
             colors: {
-              background: "#020617", // Deep Dark Blue/Black
-              surface: "#0f172a",    // Slate 900
-              primary: "#0ea5e9",    // Sky 500 (Electric Blue)
-              secondary: "#10b981",  // Emerald 500 (Neon Green)
-              accent: "#22d3ee",     // Cyan 400
+              background: "#f8f9fa",
+              surface: "#ffffff",
+              primary: "#74b9ff",
+              secondary: "#a29bfe",
+              accent: "#81ecec",
+              "text-primary": "#2d3436",
+              "text-secondary": "#636e72",
+              "neu-light": "#ffffff",
+              "neu-shadow": "#d1d1d1",
             },
             fontFamily: {
-              sans: ['"Rajdhani"', 'sans-serif'],
-              mono: ['"Share Tech Mono"', 'monospace'],
-              display: ['"Orbitron"', 'sans-serif'],
+              sans: ['"Inter"', 'sans-serif'],
+              display: ['"Inter"', 'sans-serif'],
+              mono: ['"Inter"', 'monospace'],
             },
-            animation: {
-              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'glitch': 'glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite',
-              'float': 'float 6s ease-in-out infinite',
-              'noise': 'noise 0.2s infinite',
+            boxShadow: {
+              'neu': '8px 8px 15px #d1d1d1, -8px -8px 15px #ffffff',
+              'neu-sm': '4px 4px 8px #d1d1d1, -4px -4px 8px #ffffff',
+              'neu-lg': '12px 12px 24px #d1d1d1, -12px -12px 24px #ffffff',
+              'neu-inset': 'inset 4px 4px 8px #d1d1d1, inset -4px -4px 8px #ffffff',
+              'neu-pressed': 'inset 6px 6px 12px #d1d1d1, inset -6px -6px 12px #ffffff',
             },
-            keyframes: {
-              glitch: {
-                '0%': { transform: 'translate(0)' },
-                '20%': { transform: 'translate(-2px, 2px)' },
-                '40%': { transform: 'translate(-2px, -2px)' },
-                '60%': { transform: 'translate(2px, 2px)' },
-                '80%': { transform: 'translate(2px, -2px)' },
-                '100%': { transform: 'translate(0)' },
-              },
-              float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-20px)' },
-              },
-              noise: {
-                '0%': { transform: 'translate(0,0)' },
-                '10%': { transform: 'translate(-5%,-5%)' },
-                '20%': { transform: 'translate(-10%,5%)' },
-                '30%': { transform: 'translate(5%,-10%)' },
-                '40%': { transform: 'translate(-5%,15%)' },
-                '50%': { transform: 'translate(-10%,5%)' },
-                '60%': { transform: 'translate(15%,0)' },
-                '70%': { transform: 'translate(0,10%)' },
-                '80%': { transform: 'translate(-15%,0)' },
-                '90%': { transform: 'translate(10%,5%)' },
-                '100%': { transform: 'translate(5%,0)' }
-              }
-            }
+            borderRadius: {
+              'neu': '16px',
+              'neu-sm': '12px',
+              'neu-pill': '50px',
+            },
           },
         },
       };
     </script>
-    <!-- Fonts: Orbitron (Headings), Rajdhani (Body), Share Tech Mono (Code) -->
+    <!-- Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
       body {
-        background-color: #020617;
-        color: #f8fafc;
+        background-color: #f8f9fa;
+        color: #2d3436;
         overflow-x: hidden;
+        font-family: 'Inter', sans-serif;
       }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #0f172a; 
+        background: #e9ecef; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #0ea5e9; 
+        background: #b2bec3; 
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #10b981; 
+        background: #636e72; 
       }
-      .clip-corner {
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);
+      /* Neumorphic base style */
+      .neu-card {
+        background: #f0f0f3;
+        box-shadow: 8px 8px 15px #d1d1d1, -8px -8px 15px #ffffff;
+        border-radius: 16px;
       }
-      .clip-shatter {
-        clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+      .neu-card-sm {
+        background: #f0f0f3;
+        box-shadow: 4px 4px 8px #d1d1d1, -4px -4px 8px #ffffff;
+        border-radius: 12px;
       }
-      .clip-triangle {
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      .neu-button {
+        background: #f0f0f3;
+        box-shadow: 6px 6px 12px #d1d1d1, -6px -6px 12px #ffffff;
+        border-radius: 50px;
+        transition: all 0.2s ease;
       }
-      .clip-shard-1 {
-        clip-path: polygon(0 0, 100% 20%, 80% 100%, 0 80%);
+      .neu-button:hover {
+        box-shadow: 4px 4px 8px #d1d1d1, -4px -4px 8px #ffffff;
+        transform: scale(0.98);
       }
-      .clip-shard-2 {
-        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      .neu-button:active {
+        box-shadow: inset 4px 4px 8px #d1d1d1, inset -4px -4px 8px #ffffff;
       }
-      .text-glow {
-        text-shadow: 0 0 10px rgba(14, 165, 233, 0.5), 0 0 20px rgba(16, 185, 129, 0.3);
+      .neu-inset {
+        background: #f0f0f3;
+        box-shadow: inset 4px 4px 8px #d1d1d1, inset -4px -4px 8px #ffffff;
+        border-radius: 12px;
       }
-      /* Noise Effect */
-      .bg-noise {
-        position: fixed;
-        top: -50%;
-        left: -50%;
-        right: -50%;
-        bottom: -50%;
-        width: 200%;
-        height: 200vh;
-        background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-        background-repeat: repeat;
-        animation: noise .2s infinite;
-        opacity: 0.05;
-        visibility: visible;
-        pointer-events: none;
-        z-index: 50;
+      .neu-progress {
+        background: #e0e0e0;
+        border-radius: 50px;
+        overflow: hidden;
       }
-      .scanlines {
-        background: linear-gradient(
-          to bottom,
-          rgba(255,255,255,0),
-          rgba(255,255,255,0) 50%,
-          rgba(0,0,0,0.2) 50%,
-          rgba(0,0,0,0.2)
-        );
-        background-size: 100% 4px;
-        position: fixed;
-        pointer-events: none;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 51;
-        opacity: 0.15;
+      .neu-progress-bar {
+        background: linear-gradient(135deg, #74b9ff, #a29bfe);
+        border-radius: 50px;
+        height: 100%;
+        transition: width 1s ease;
+      }
+      /* Smooth transitions */
+      * {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
