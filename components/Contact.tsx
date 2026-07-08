@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
         </motion.div>
 
         <footer className="mt-12 text-[#b2bec3] text-xs">
-          <p>&copy; 2025 Lokesh Gopinath K. All rights reserved.</p>
+          <p>&copy; 2026 Lokesh Gopinath K. All rights reserved.</p>
         </footer>
       </div>
     </section>
